@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Sitemap: https://www.bladia.com/fr/sitemap.fr.xml
+Sitemap: https://www.bladia.com/en/sitemap.en.xml

@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+    bladia-frontend:
+        image: nginx:alpine
+        container_name: 'bladia-frontend'
+        volumes:
+            - ./dist:/app
+            - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
+        restart: always
+        networks:
+           - common
+networks:
+    common:
+        external:
+           name: common

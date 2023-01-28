@@ -1,0 +1,68 @@
+{
+  "name": "bladia",
+  "version": "0.0.3",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "serve-bladia": "vue-cli-service serve --mode bladia.local",
+    "build": "vue-cli-service build:prerender",
+    "build-bladia": "vue-cli-service build:prerender --mode bladia.production --env production",
+    "build-bladia2": "vue-cli-service build --mode bladia.production --env production",
+    "sitemap": "vue-cli-service build:sitemap",
+    "sitemap-bladia": "vue-cli-service build:sitemap --mode bladia.production --env production",
+    "build-test": "vue-cli-service build:prerender --mode test.production --env production",
+    "build-test-bladia": "vue-cli-service build:prerender --mode testbladia.production --env production",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint",
+    "lint:fix": "eslint -c .eslintrc.js **/*.js --fix --ignore-path .gitignore .",
+    "build-report": "vue-cli-service build --report"
+  },
+  "dependencies": {
+    "@firebase/app": "^0.6.30",
+    "@firebase/auth": "^0.16.8",
+    "@firebase/firestore": "^2.4.0",
+    "@firebase/storage": "^0.4.4",
+    "@popperjs/core": "^2.10.2",
+    "axios": "^0.25.0",
+    "click-outside-vue3": "^4.0.1",
+    "core-js": "^3.19.1",
+    "moment": "^2.29.1",
+    "mosha-vue-toastify": "^1.0.23",
+    "postcss": "^7.0.39",
+    "register-service-worker": "^1.7.2",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.1",
+    "v-calendar": "^3.0.0-alpha.6",
+    "vue": "^v3.2.22",
+    "vue-gtag": "^2.0.1",
+    "vue-meta": "3.0.0-alpha.6",
+    "vue-router": "^4.0.12",
+    "vuex": "^4.0.2"
+  },
+  "devDependencies": {
+    "@prerenderer/renderer-jsdom": "^0.2.0",
+    "@vue/cli-plugin-babel": "^4.5.15",
+    "@vue/cli-plugin-pwa": "^4.5.15",
+    "@vue/cli-plugin-router": "^4.5.15",
+    "@vue/cli-plugin-vuex": "^4.5.15",
+    "@vue/cli-service": "^4.5.15",
+    "@vue/compiler-sfc": "^3.2.22",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "@vue/test-utils": "^2.0.0-rc.16",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8.3.0",
+    "eslint-plugin-prettier": "*",
+    "eslint-plugin-vue": "^8.1.1",
+    "node-sass": "^6.0.1",
+    "prerender-spa-plugin": "^3.4.0",
+    "prettier": "^2.4.1",
+    "sass-loader": "^10.1.0",
+    "sitemap-webpack-plugin": "^1.1.1",
+    "vue-cli-plugin-tailwind": "~2.0.6"
+  },
+  "vuePlugins": {
+    "service": [
+      "build.prerender.js",
+      "build.sitemap.js"
+    ]
+  }
+}

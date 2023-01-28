@@ -1,0 +1,149 @@
+{
+    "port": 8080,
+    "proxy": {
+        "^/availability": {
+            "target": "https://dev.apiferry.io/api",
+            "changeOrigin": true,
+            "secure": false,
+            "logLevel": "debug",
+            "pathRewrite": {
+                "^/availability": "/availability"
+            }
+        },
+        "^/ferry": {
+            "target": "https://dev.bein.travel/api/v1",
+            "changeOrigin": true,
+            "secure": false,
+            "logLevel": "debug",
+            "pathRewrite": {
+                "^/ferry": "/ferry"
+            }
+        },
+        "^/journey": {
+            "target": "https://dev.apiferry.io/api",
+            "changeOrigin": true,
+            "secure": false,
+            "logLevel": "debug",
+            "pathRewrite": {
+                "^/journey": "/journey"
+            }
+        },
+        "^/vehicle-data": {
+            "target": "https://dev.apiferry.io/api",
+            "changeOrigin": true,
+            "secure": false,
+            "logLevel": "debug",
+            "pathRewrite": {
+                "^/vehicle-data": "/vehicle-data"
+            }
+        },
+        "^/vehicle-brand": {
+            "target": "https://dev.apiferry.io/api",
+            "changeOrigin": true,
+            "secure": false,
+            "logLevel": "debug",
+            "pathRewrite": {
+                "^/vehicle-brand": "/vehicle-brand"
+            }
+        },
+        "^/booking": {
+            "target": "https://dev.bein.travel/api/v1",
+            "changeOrigin": true,
+            "secure": false,
+            "logLevel": "debug",
+            "pathRewrite": {
+                "^/booking": "/booking"
+            }
+        },
+        "^/transporter": {
+            "target": "https://dev.bein.travel/api/v1",
+            "changeOrigin": true,
+            "secure": false,
+            "logLevel": "debug",
+            "pathRewrite": {
+                "^/transporter": "/transporter"
+            }
+        },
+        "^/utils/config": {
+            "target": "https://dev.bein.travel/api/v1",
+            "changeOrigin": true,
+            "secure": false,
+            "logLevel": "debug",
+            "pathRewrite": {
+                "^/utils/config": "/utils/config"
+            }
+        },
+        "^/utils/text": {
+            "target": "https://dev.bein.travel/api/v1",
+            "changeOrigin": true,
+            "secure": false,
+            "logLevel": "debug",
+            "pathRewrite": {
+                "^/utils/text": "/utils/text"
+            }
+        },
+        "^/blog": {
+            "target": "https://dev.bein.travel/api/v1",
+            "changeOrigin": true,
+            "secure": false,
+            "logLevel": "debug",
+            "pathRewrite": {
+                "^/blog": "/blog"
+            }
+        },
+        "^/faq": {
+            "target": "https://dev.bein.travel/api/v1",
+            "changeOrigin": true,
+            "secure": false,
+            "logLevel": "debug",
+            "pathRewrite": {
+                "^/faq": "/faq"
+            }
+        },
+        "^/banner/list": {
+            "target": "https://dev.bein.travel/api/v1",
+            "changeOrigin": true,
+            "secure": false,
+            "logLevel": "debug",
+            "pathRewrite": {
+                "^/banner/list": "/banner/list"
+            }
+        },
+        "^/utils/promo": {
+            "target": "https://dev.bein.travel/api/v1",
+            "changeOrigin": true,
+            "secure": false,
+            "logLevel": "debug",
+            "pathRewrite": {
+                "^/utils/promo": "/utils/promo"
+            }
+        },
+        "^/user/login": {
+            "target": "https://dev.bein.travel/api/v1",
+            "changeOrigin": true,
+            "secure": false,
+            "logLevel": "debug",
+            "pathRewrite": {
+                "^/user/login": "/user/login"
+            }
+        },
+        "^/user": {
+            "target": "https://dev.bein.travel/api/v1",
+            "changeOrigin": true,
+            "secure": false,
+            "logLevel": "debug",
+            "pathRewrite": {
+                "^/user": "/user"
+            }
+        },
+        "^/agency": {
+            "target": "https://dev.bein.travel/api/v1",
+            "changeOrigin": true,
+            "secure": false,
+            "logLevel": "debug",
+            "pathRewrite": {
+                "^/utils/config": "/utils/config"
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+    viaferries-frontend:
+        image: nginx:alpine
+        container_name: 'viaferries-frontend'
+#        ports:
+#            - 9080:80
+        volumes:
+            - ./dist:/app
+            - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
+        restart: always
+        networks:
+           - common
+networks:
+    common:
+        external:
+           name: common
